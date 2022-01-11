@@ -5,6 +5,7 @@ the addition of another part of the key - B. While not secure, implementing the 
 # Encryption-Decryption
 
 E(x) = y = a * x + B % 128
+
 D(y) = x = inv_a * (y-b) % 128
 
 Where inv_a is the modular multiplicative inverse of A in the ring of 128. Note that since A needs to be inverted for decryption, it has a restriction of gcd(a, 128) = 1. For the
